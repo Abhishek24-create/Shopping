@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NOGOZO</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .shop_btn
+        {
+            background: none;
+            color: dodgerblue;
+            border: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary ">
+    <div class="container">
+
+
+  <a class="navbar-brand text-white" href="#">NOGOZO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/home/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/shop/">Shop</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link text-white" href="/showproduct/">Show Items</a>
+      </li>
+    </ul>
+  </div>
+    </div>
+</nav>
+<br><br>
+
+<div class="container">
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card shadow p-4 mb-4 bg-white" style="border: none">
+          <div class="card-body">
+              <form method="post" class="text-center" action="/product/">
+                  {% csrf_token %}
+                  <input type="hidden" name="shop_name" value="Koms N Cakes">
+                  <input type="submit" name="submit" value="Koms N Cakes" class="shop_btn">
+              </form>
+              <i class='fas fa-map-marker-alt' style='font-size:24px'>360,Aman Colony,jalandhar,Punjab</i>
+              <p style="color:Green">OPEN</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card shadow p-4 mb-4 bg-white" style="border: none">
+          <div class="card-body">
+              <form method="post" class="text-center" action="/product/">
+                  {% csrf_token %}
+                  <input type="hidden" name="shop_name" value="Radhika Department Store">
+                  <input type="submit" name="submit" value="Radhika Department Store" class="shop_btn">
+              </form>
+              <i class='fas fa-map-marker-alt' style='font-size:24px'>LP-34,Ram Nagar,Gorakhpur,Uttar Pradesh</i>
+              <p style="color:Green">OPEN</p>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card shadow p-4 mb-4 bg-white" style="border: none">
+          <div class="card-body">
+              <form method="post" class="text-center" action="/product/">
+                  {% csrf_token %}
+                  <input type="hidden" name="shop_name" value="Gyani Dhaba">
+                  <input type="submit" name="submit" value="Gyani Dhaba" class="shop_btn">
+              </form>
+              <i class='fas fa-map-marker-alt' style='font-size:24px'>268,Worli,Navi Mumbai,Maharashtra</i>
+              <p style="color:Green">OPEN</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card shadow p-4 mb-4 bg-white" style="border: none">
+          <div class="card-body">
+              <form method="post" class="text-center" action="/product/">
+                  {% csrf_token %}
+                  <input type="hidden" name="shop_name" value="Maa Durga Veg Shop">
+                  <input type="submit" name="submit" value="Maa Durga Veg Shop" class="shop_btn">
+              </form>
+              <i class='fas fa-map-marker-alt' style='font-size:24px'>TN-890,Badhaiya Maholla,Siwan,Bihar</i>
+              <p style="color:Green">OPEN</p>
+              </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card shadow p-4 mb-4 bg-white" style="border: none">
+          <div class="card-body">
+              <form method="post" class="text-center" action="/product/">
+                  {% csrf_token %}
+                  <input type="hidden" name="shop_name" value="Jai Bajrang Dairy">
+                  <input type="submit" name="submit" value="Jai Bajrang Dairy" class="shop_btn">
+              </form>
+              <i class='fas fa-map-marker-alt' style='font-size:24px'>GT-46,Anand Nagar Colony,Gujrat</i>
+              <p style="color:Green">OPEN</p>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card shadow p-4 mb-4 bg-white" style="border: none">
+         <div class="card-body">
+              <form method="post" class="text-center" action="/product/">
+                  {% csrf_token %}
+                  <input type="hidden" name="shop_name" value="Neeraj Elecricals">
+                  <input type="submit" name="submit" value="Neeraj Elecricals" class="shop_btn">
+              </form>
+            <i class='fas fa-map-marker-alt' style='font-size:24px'>HY-468,Ameerpet,Hyderabad</i>
+              <p style="color:Green">OPEN</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card shadow p-4 mb-4 bg-white" style="border: none">
+        <div class="card-body">
+            <form method="post" class="text-center" action="/product/">
+                {% csrf_token %}
+                  <input type="hidden" name="shop_name" value="Print House">
+                  <input type="submit" name="submit" value="Print House" class="shop_btn">
+              </form>
+            <i class='fas fa-map-marker-alt' style='font-size:24px'>CL-24,Lajpatnagar,New Delhi</i>
+              <p style="color:Green">OPEN</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card shadow p-4 mb-4 bg-white" style="border: none">
+        <div class="card-body">
+            <form method="post" class="text-center" action="/product/">
+                {% csrf_token %}
+                  <input type="hidden" name="shop_name" value="Ladoo Gopal Dress Store">
+                  <input type="submit" name="submit" value="Ladoo Gopal Dress Store" class="shop_btn">
+              </form>
+            <i class='fas fa-map-marker-alt' style='font-size:24px'>LIG-78,Shbhash Nagar,Maharjpur,Jabalpur</i>
+              <p style="color:Green">OPEN</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+</body>
+</html>
