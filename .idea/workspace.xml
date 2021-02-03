@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b705a24-cb59-4b4a-9f6d-c578de88a6cd" name="Default Changelist" comment="" />
+    <list default="true" id="6b705a24-cb59-4b4a-9f6d-c578de88a6cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/NOGOZO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NOGOZO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOGOZO/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NOGOZO/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Webapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Webapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/MyApp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/MyApp/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/MyApp/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/MyApp/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/MyApp/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/MyApp/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/MyApp/shopkeeper.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/MyApp/shopkeeper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/MyApp/showproduct.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/MyApp/showproduct.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,45 +42,53 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="HTML4 File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jakQuntj3fcbVZhNPdeSfgs8PO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
-    <configuration name="NOGOZO" type="Python.DjangoServer" factoryName="Django server">
+  <component name="RunManager" selected="Python.NOGOZO - Copy">
+    <configuration name="NOGOZO - Copy" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NOGOZO" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="SDK_HOME" value="C:\Users\lenovo\Anaconda3\envs\PyCharm-Community Projects\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.NOGOZO - Copy" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -80,6 +102,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -130,32 +153,41 @@
       <workItem from="1604156814417" duration="1176000" />
       <workItem from="1604158715362" duration="1428000" />
       <workItem from="1604161158222" duration="1795000" />
+      <workItem from="1604224623994" duration="1094000" />
+      <workItem from="1604481664038" duration="20000" />
+      <workItem from="1606153657692" duration="1267000" />
+      <workItem from="1606156058097" duration="1699000" />
+      <workItem from="1606157880443" duration="406000" />
+      <workItem from="1606381278636" duration="11000" />
+      <workItem from="1608892084491" duration="1149000" />
+      <workItem from="1608895543101" duration="321000" />
+      <workItem from="1609823978680" duration="69000" />
+      <workItem from="1609831601963" duration="479000" />
+      <workItem from="1609833417767" duration="649000" />
+      <workItem from="1609869191718" duration="355000" />
+      <workItem from="1609919167639" duration="536000" />
+      <workItem from="1609924830833" duration="115000" />
+      <workItem from="1609925140882" duration="752000" />
+      <workItem from="1609926772940" duration="96000" />
+      <workItem from="1609927026231" duration="1603000" />
+      <workItem from="1609928929953" duration="75000" />
+      <workItem from="1609932949107" duration="1636000" />
+      <workItem from="1609934922719" duration="1025000" />
+      <workItem from="1609936935769" duration="1175000" />
+      <workItem from="1609938659627" duration="1712000" />
+      <workItem from="1609940476296" duration="1134000" />
+      <workItem from="1609991472168" duration="10000" />
+      <workItem from="1610013288137" duration="85000" />
+      <workItem from="1610013392368" duration="45000" />
+      <workItem from="1610013536545" duration="1482000" />
+      <workItem from="1610015187173" duration="1625000" />
+      <workItem from="1610020831279" duration="25000" />
+      <workItem from="1611575443846" duration="264000" />
+      <workItem from="1611576194156" duration="26000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1604064846656">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604064846656" />
-    <state x="390" y="192" width="585" height="306" key="com.intellij.ide.util.TipDialog" timestamp="1604161157762">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="390" y="192" width="585" height="306" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1604161157762" />
-    <state x="347" y="37" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604061714706">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="347" y="37" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1604061714706" />
-    <state x="328" y="91" width="709" height="546" key="find.popup" timestamp="1604136434205">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="328" y="91" width="709" height="546" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1604136434205" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604145649530">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604145649530" />
   </component>
 </project>

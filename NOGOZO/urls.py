@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import TemplateView, ListView
 from django.contrib import admin
 from django.urls import path
 from Webapp import views
@@ -22,11 +23,16 @@ from Webapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.Home_Page),
+    path('logout/',views.Logout),
+    path('applicant/', TemplateView.as_view(template_name="MyApp/login.html")),
+    path('applog/',views.Login),
+    path('register/',views.Registration_Page),
+    path('savedetail/',views.SaveRegister),
     path('home/',views.Home_Page),
     path('shop/',views.Shop_Page),
     path('keeper/',views.ShopKeeper),
     path('product/',views.ProductSaved),
-    path('add_to_cart/',views.Add_to_Cart),
+    path('add_to_cart/',views.Add_to_Cart, name='addtocart'),
     path('showproduct/',views.Show_Product),
 
 ]

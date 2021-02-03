@@ -1,0 +1,25 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="NOGOZO" type="Python.DjangoServer" factoryName="Django server" singleton="false">
+    <module name="NOGOZO" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <envs>
+      <env name="Path" value="C:\Users\lenovo\AppData\Local\Programs\Python38;C:\Users\lenovo\AppData\Local\Programs\Python38\Scripts;C:\users\lenovo\appdata\local\programs\python38\lib\site-packages (7.3.0);C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit);C:\Program Files (x86)\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle - OraDb11g_home1\Application Development;C:\Users\lenovo\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories;C:\Program Files (x86)\Notepad++;C:\Program Files (x86)\Accessories;C:\Program Files\heroku\bin;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\DB Browser (SQLite);C:\ProgramData\Chrome Driver;%PyCharm Community Edition with Anaconda plugin;C:\Program Files\MongoDB\Server\4.2\bin;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\DB Browser (SQLite);C:\Program Files\JetBrains\PyCharm Community Edition with Anaconda plugin 2020.1.1\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.1\bin;" />
+    </envs>
+    <option name="SDK_HOME" value="C:\Users\lenovo\herokuproject\Scripts\python.exe" />
+    <option name="WORKING_DIRECTORY" value="" />
+    <option name="IS_MODULE_SDK" value="false" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <option name="launchJavascriptDebuger" value="false" />
+    <option name="port" value="8000" />
+    <option name="host" value="" />
+    <option name="additionalOptions" value="" />
+    <option name="browserUrl" value="http://127.0.0.1:8000/" />
+    <option name="runTestServer" value="true" />
+    <option name="runNoReload" value="false" />
+    <option name="useCustomRunCommand" value="false" />
+    <option name="customRunCommand" value="" />
+    <method v="2" />
+  </configuration>
+</component>

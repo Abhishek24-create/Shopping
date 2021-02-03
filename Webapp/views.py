@@ -1,10 +1,44 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponseRedirect
-from Webapp.models import Products,AddtoCard
+from Webapp.models import Products,AddtoCard,register
 import base64
 # Create your views here.
 def Home_Page(request):
     return render(request,"MyApp/home.html")
+
+def Login(request):
+    if request.POST:
+        useremail= request.POST.get('email')
+        password = request.POST.get('password')
+        count = register.objects.filter(email=useremail,password=password)
+        if count.count()>0:
+            request.session['useremail'] = useremail
+
+            return redirect("/", {'useremail':useremail})
+        else:
+            return render(request,"MyApp/login.html",{'message':'Invalid User or Password'})
+
+
+def Logout(request):
+      request.session.flush()
+      return redirect("/")
+
+def Registration_Page(request):
+    return render(request,"MyApp/registration.html")
+
+
+def SaveRegister(request):
+    username = request.POST.get("username")
+    email = request.POST.get("email")
+    password = request.POST.get("password")
+    auth=register.objects.filter(email=email).count()
+    if auth>0:
+        message="User Already Registered With This User"
+        return render(request, "MyApp/registration.html", {'message': message})
+    else:
+        register(username=username, email=email, password=password).save()
+    return render(request, "MyApp/login.html")
+
 
 def Shop_Page(request):
     return render(request,"MyApp/shop.html")
@@ -41,4 +75,4 @@ def Show_Product(request):
     for product in show:
         id = product.productid
         pro = Products.objects.filter(id=id)
-        return render(request,"MyApp/showproduct.html",{"pro":pro})
+        return render(request,"MyApp/showproduct.html",{"pro":pro,"show":show})

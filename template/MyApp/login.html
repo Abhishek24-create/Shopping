@@ -1,38 +1,41 @@
+<!DOCTYPE html>
 {% include 'MyApp/base.html' %}
 {% block body_block %}
-<br><br>
-<div class="container">
-            <h1>{{ shop }}</h1>
-{{ message }}
-        {% for product in products %}
-    <div class="shadow p-4 mb-4 bg-white">
-        <div class="row">
-            <div class="col-sm-1">
-                <img src="{{ product.Productimage }}" width="80" height="80" class="rounded-circle">
-            </div>
-            <div class="col-sm-4">
-                <h4>{{ product.Productname }}</h4>
-            </div>
-            <div class="col-sm-7">
-                <div class="float-right">
-                     {% if request.session.type == 'useremail' %}
-                    <form method="post" action="/add_to_cart/">
-                        {% csrf_token %}
-                        <input type="hidden" name="product_id" value="{{ product.id }}">
-                        <input type="submit" name="add_to_cart" value="Add To Cart" class="btn btn-info">
-                    </form>
-                    {% else %}
-               <a  href="/applicant/"  class="btn btn-info">Go Login To Add To Cart</a>
-          {% endif %}
-                </div>
-            </div>
-        </div>
-    </div>
-        {% endfor %}
+<body>
+
+
+{% if message %}
+<div class="alert alert-danger text-center  alert-dismissible" >
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+ {{ message}}
 </div>
+{% endif %}
+<br><br>
+<div class="container-fluid " id="login_form">
+     <div class="col-sm-4 card shadow-lg p-4 mb-4 mx-auto">
+
+<form action="/applog/" method="post">
+            {% csrf_token %}
+
+  	 <h2 class="bg-primary text-center text-white" style="border-radius:5px">Login</h2>
+    <div class="form-group">
+     <label>USEREMAIL:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter useremail" name="email" required>
+     </div>
+     <div class="form-group">
+      <label>PASSWORD:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required maxlength="6" size="6">
+     </div>
+
+    <button type="submit" name="login" class="btn btn-primary" >Login</button>
+
+    </form>
+     </div>
+    <p align="center">Not registered? Click <a href="/register/">here</a> to register!</p>
+  </div>
 
 
-
+</body>
 {% endblock %}
 <div class="mt-5 pt-5 pb-5 footer">
 <div class="container">
@@ -49,7 +52,7 @@
         <ul class="m-0 p-0">
           <li>- <a href="/home/">Home</a></li>
           <li>- <a href="/shop/">Shop</a></li>
-<!--            <li>- <a href="showproduct">Shop Items</a></li>-->
+            <li>- <a href="showproduct">Shop Items</a></li>
           <li>- <a href="/register/">Registration</a></li>
           <li>- <a href="/applicant/">Login</a></li>
         </ul>
